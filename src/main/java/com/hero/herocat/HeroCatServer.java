@@ -67,6 +67,7 @@ public class HeroCatServer {
                 nameToClassNameMap.put(simpleClassName.toLowerCase(), basePackage + "." + simpleClassName);
             }
         }
+        nameToClassNameMap.put(StaticServlet.class.getSimpleName(), StaticServlet.class.getName());
         //System.out.println(nameToClassNameMap);
     }
 
